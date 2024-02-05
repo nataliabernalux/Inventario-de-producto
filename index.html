@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Inventario</title>
+	<link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Bellota+Text:wght@700&family=Playfair+Display:wght@900&family=Roboto+Flex:opsz,wght@8..144,600&family=Roboto:wght@400;500;700&family=Vazirmatn:wght@500&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Bellota+Text:wght@700&family=Playfair+Display:wght@900&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Roboto:wght@400;500;700&family=Vazirmatn:wght@500;600&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Bellefair&family=Bellota+Text:wght@700&family=Playfair+Display:wght@900&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Roboto:wght@400;500;700&family=Vazirmatn:wght@500;600&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@700&family=Bellefair&family=Bellota+Text:wght@700&family=Playfair+Display:wght@900&family=Poppins:wght@400;500;800&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Roboto:wght@400;500;700&family=Vazirmatn:wght@500;600&display=swap" rel="stylesheet">
+
+	
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+		
+			<nav class="nav">
+				<h2>Inventario de Producto</h2>
+			</nav>
+    </header>    
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="inside-container">
+                        <img class="icon-1" src="img/carga.jpg" alt="">
+                        <h1>Cargá tu venta</h1>
+                        <p>Actualiza tu stock cargando un producto vendido</p>
+                        <div class="label-1">
+                            <div>
+                                <p class="label">Label</p>
+                            </div> 
+                            <div class="articulo-input">
+                                <p class="gray-p">Ingresá el artículo de tu producto</p>
+                            </div>
+                        </div>
+                        <button class="blue-button" onclick="togglePopup()">
+                            <img src="img/Check.svg" alt="Refresh Icon"> Actualizar
+                        </button>
+                        <div class="popup" id="myPopup">
+                            <img src="img/actualizado.jpg">
+                            <h2>Stock actualizado</h2>
+                            <p>El artículo ABC123 ha sido eliminado.</p>
+                            <button id="backButton">
+                                <img src="img/volver.png" alt="Back">
+                            </button>
+                        </div>                  
+                    </div>
+                </div>
+                
+
+                <div class="col">
+                    <div class="inside-container">
+                        <img class="icon-1" src="img/agregar.jpg" alt="">
+                        <h1>Agregá un producto</h1>
+                        <p>Actualiza tu stock cargando un producto nuevo</p>
+                        <button id="addButton" class="blue-button">
+                            <img src="img/plus.svg" alt="Refresh Icon"> Agregar
+                        </button>  
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="inside-container-2">
+                        <div class="search-bar">
+                            <img class="search-icon" src="img/input.svg" alt="Refresh Icon">
+                            <p>Busca un producto en tu stock</p>
+                        </div>
+                        <p>Filtrar</p>
+                        <div class="filter">
+                            <div>
+                                <h3>Nombre</h3>
+                            </div>
+                            <div>    
+                                <img class="down-arrow" src="img/down-arrow.svg">
+                            </div>
+                        </div>
+
+                        <div class="filter">
+                            <div>
+                                <h3>Talle</h3>
+                            </div>
+                            <div>    
+                                <img class="down-arrow" src="img/down-arrow.svg">
+                            </div>
+                        </div>
+
+                        <div class="filter">
+                            <div>
+                                <h3>Modelo</h3>
+                            </div>
+                            <div>    
+                                <img class="down-arrow" src="img/down-arrow.svg">
+                            </div>
+                        </div>
+
+                        <div class="filter">
+                            <div>
+                                <h3>Proveedor</h3>
+                            </div>
+                            <div>    
+                                <img class="down-arrow" src="img/down-arrow.svg">
+                            </div>
+                        </div>
+
+                        <div class="filter">
+                            <div>
+                                <h3>Fecha de carga</h3>
+                            </div>
+                            <div>    
+                                <img class="down-arrow" src="img/down-arrow.svg">
+                            </div>
+                        </div>
+
+                        <p>Todos los productos / X productos encontrados</p>
+                        <h3>Nombre genérico</h3>
+
+                        <div class="unified-button">
+                            <button class="left-rounded-button">
+                                <div class="content-container">
+                                    <div class="first-line">
+                                        <h4>Modelo</h4>
+                                        <p>T</p>
+                                    </div>
+                                    <div class="second-line">
+                                        <span>Artículo</span>
+                                        <img class="" src="img/green-arrow.svg">
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button class="rigth-rounded-button">
+                                <div class="content-container">
+                                    <div class="first-line">
+                                        <p class="price">$ 86.983</p>
+                                    </div>
+                                    <div class="second-line">
+                                        <p></p>
+                                        <img class="" src="img/green-arrow.svg">
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        
+
+                        <div class="unified-button">
+                            <button class="left-rounded-button">
+                                <div class="content-container">
+                                    <div class="first-line">
+                                        <h4>Modelo</h4>
+                                        <p>T</p>
+                                    </div>
+                                    <div class="second-line">
+                                        <span>Artículo</span>
+                                        <img class="" src="img/green-arrow.svg">
+                                    </div>
+                                </div>
+                            </button>
+
+                            <button class="rigth-rounded-button">
+                                <div class="content-container">
+                                    <div class="first-line">
+                                        <p class="price">$ 86.983</p>
+                                    </div>
+                                    <div class="second-line">
+                                        <p></p>
+                                        <img class="" src="img/green-arrow.svg">
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+
+
+		</div>
+    </header>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

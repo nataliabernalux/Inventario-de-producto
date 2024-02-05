@@ -1,0 +1,297 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #F0F9FF;
+    display: flex; /* Use flex container */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Ensure full viewport height */
+}
+
+p{
+    color: #575757;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+	font-family: Nunito, serif;
+    font-size: 28px;
+	color:  #1A1A1A;
+	font-weight: 400;
+    margin-top: 40px;
+    margin:  1em 0 0.3em 0;
+    	
+}
+
+
+
+h2 {
+	
+	color: white;
+	font-family: Nunito, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	margin: 0;
+    text-align: center;
+}
+
+
+h3{
+	font-family: Nunito, sans-serif;
+	font-size: 1em;
+	font-weight: 500;
+    color: #109AFB;
+	padding: 0;
+	text-align: center;
+	
+}
+
+
+h4 {
+	font-family: Nunito, sans-serif;
+	font-size: 1.2em;
+	font-weight: 600;
+    color: #1D1B20;
+	padding: 0;
+	text-align: center;
+}
+
+h5{
+	font-size: 20px;
+	color: #008C8E;
+	font-family: Vazirmatn, sans-serif;
+	font-weight: 400;
+	margin:0;
+	padding-top: 1em;
+}
+
+
+
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F9FF;
+    width: 500px;
+    max-width: 85%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.inside-container-3{
+   margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    height: 100%; /* Set height to 100% */
+    }
+
+
+.producto-input{
+    box-sizing: border-box; /* Ensure box-sizing property */
+    background-color: white ;
+    padding: 0.7em;
+    min-width: 400px;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #C2C2C2;
+    border-width: 1px;
+    
+    
+}
+
+
+
+.product-info{
+    
+    color: #1D1B20 ;
+    font-size: 12px ;
+    background-color: #F0F9FF;
+    border-radius: 10px;
+    width: 50px;
+    margin-left: 10px;
+    margin-top: 0.7em; /* Adjusted margin-top */
+    margin-bottom: -0.7em; /* Added margin-bottom */
+    position: relative; /* Added position relative */
+    z-index: 1; /* Added z-index */
+    
+}
+
+.product-info-1{
+    position: relative;
+    
+}
+
+.gray-p{
+    color: #8d8d8d;
+}
+
+
+.blue-button {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    position: relative;
+    background-color: #109AFB;
+    color: white;
+    border-style: solid;
+    border-color: #109AFB;
+    border-radius: 50px;
+    padding: 0.5em 1em; /* Adjust padding to make room for the icon */
+    width: 10em;
+    height: 3em;
+    margin: 2em 0;
+    overflow: hidden; /* Hide overflow for the absolute position of the icon */
+}
+
+.blue-button img {
+    margin-right: 0.5em; 
+}
+
+
+.blue-button-add
+{
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    background-color: #109AFB;
+    color: white;
+    border-style: solid;
+    border-color: #109AFB;
+    border-radius: 50px;
+    padding: 0.5em 1em; 
+    width: 10em;
+    height: 3em;
+    margin: 2em 0;
+    overflow: hidden;
+}
+
+.cancelar{
+    display: flex;
+    align-items: center; /* Center items vertically */
+    position: relative;
+    background-color: #F0F9FF;
+    color: #CB3F3F;
+    border-style: solid;
+    border-color: #CB3F3F;
+    border-radius: 50px;
+    padding: 0.5em 1em; /* Adjust padding to make room for the icon */
+    width: 10em;
+    height: 3em;
+    margin-top: 2em;
+    overflow: hidden;
+}
+
+.cancelar img{
+    margin-right: 0.5em; 
+}
+
+
+.lado{
+    display: flex;
+    gap: 30px;
+    
+}
+
+
+.lado a {
+    text-decoration: none; /* Remove default underline */
+    color: #109AFB; /* Set link color */
+    cursor: pointer;
+}
+
+.lado h3{
+    margin-top: 35px;
+}
+
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    max-width: 400px;
+    text-align: center;
+}
+
+.popup img {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.popup h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    z-index: 999; /* Ensure the overlay is behind the popup */
+}
+
+
+.popup button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    .product-container {
+        width: 90%;
+    }
+
+    .inside-container {
+        align-items: center; /* Center children horizontally */
+    }
+
+    .producto-input {
+        width: 80vw; /* Set width to 80% of the viewport width */
+        box-sizing: border-box; /* Include padding and borders in width calculation */
+        max-width: none; /* Remove max-width */
+        min-width: auto; /* Reset min-width to auto */
+    }
+
+    button {
+        width: 40%; /* Set a specific width for buttons (adjust as needed) */
+        margin-top: 10px; /* Add some spacing between buttons */
+    }
+}
